@@ -84,7 +84,6 @@ export const deleteUser = (req, res) => {
     }
   });
 };
-
 export const updateUser = (req, res) => {
   const { id } = req.params;
   const { firstName, lastName, age } = req.body;
