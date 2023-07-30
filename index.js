@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use('/users', usersRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Hello, users!');
 });
 
 app.listen(PORT, () =>
