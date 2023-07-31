@@ -104,6 +104,7 @@ export const updateUser = (req, res) => {
     updateValues.push(lastName);
     columnsToUpdate.push('lastName');
   }
+
   if (age) {
     updateValues.push(age);
     columnsToUpdate.push('age');
