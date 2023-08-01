@@ -6,7 +6,7 @@ import usersRoutes from './routes/users.js';
 
 const app = express();
 
-const PORT = 3000;
+const PORT = 9000;
 
 app.use(bodyParser.json());
 
