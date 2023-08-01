@@ -14,7 +14,7 @@ app.use(morgan('common'));
 
 app.use(helmet());
 
-app.use('/users', usersRoutes);
+app.use('/api/users', usersRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello, users!');
