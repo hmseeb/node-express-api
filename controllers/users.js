@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 import connection from '../db.js';
-let users = [];
 
 connection.query('create database if not exists users');
 

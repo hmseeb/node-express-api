@@ -7,16 +7,18 @@ import {
   updateUser,
 } from '../controllers/users.js';
 
+import { ensurePermissions } from '../api/users.js';
+
 const router = express.Router();
 // all routes in here are staring with /users
 router.get('/', getUsers);
 
-router.post('/', createUser);
+router.post('/', ensurePermissions, createUser);
 
-router.get('/:id', findUser);
+router.get('/:id', ensurePermissions, findUser);
 
-router.patch('/:id', updateUser);
+router.patch('/:id', ensurePermissions, updateUser);
 
-router.delete('/:id', deleteUser);
+router.delete('/:id', ensurePermissions, deleteUser);
 
 export default router;
